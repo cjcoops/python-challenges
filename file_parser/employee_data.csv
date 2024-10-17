@@ -1,0 +1,11 @@
+employee_id,first_name,last_name,department,salary,start_date
+1001,John,Doe,Engineering,95000,2021-01-15
+1002,Jane,Smith,Marketing,75000,2020-07-23
+1003,Emily,Davis,Engineering,105000,2019-03-12
+1004,Michael,Johnson,HR,65000,2021-08-05
+1005,Jessica,White,Engineering,99000,2022-02-01
+1006,Chris,Brown,Sales,82000,2018-05-15
+1007,Amy,Wilson,Sales,78000,2020-11-30
+1008,Daniel,Garcia,Marketing,71000,2019-09-17
+1009,Matthew,Martinez,HR,69000,2023-01-08
+1010,Laura,Rodriguez,Engineering,92000,2020-02-25
