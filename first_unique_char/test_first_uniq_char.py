@@ -1,4 +1,4 @@
-from main import first_uniq_char
+from first_uniq_char import first_uniq_char
 
 
 def test_example1():
