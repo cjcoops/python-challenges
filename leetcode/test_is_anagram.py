@@ -1,4 +1,4 @@
-from is_anagram import is_anagram
+from solutions import is_anagram
 
 
 def test_anagram_true():

@@ -1,6 +1,6 @@
 # Tests for length_of_longest_substring module
 
-from length_of_longest_substring import length_of_longest_substring
+from solutions import length_of_longest_substring
 
 
 def test_example1():
