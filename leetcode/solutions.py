@@ -54,3 +54,8 @@ def length_of_longest_substring(s):
         max_length = max(max_length, right - left + 1)  # Update max_length
 
     return max_length
+
+
+def find_the_difference(a, b):
+    difference = Counter(b) - Counter(a)
+    return next(iter(difference))
