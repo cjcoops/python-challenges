@@ -61,6 +61,9 @@ def find_the_difference(a, b):
     return next(iter(difference))
 
 
+# O(n * k log k) where n is number of words, k is average length of each word
+# Loop through n words
+# Sorting each words is O(k log k)
 def group_anagrams(anagrams):
     groups = defaultdict(list)
 
@@ -70,3 +73,24 @@ def group_anagrams(anagrams):
         groups[sorted_string].append(string)
 
     return list(groups.values())
+
+
+# Time complexity O(n) as we only iterate through array once
+# Space complexity O(1) extra space
+# Since all elements are [1..n], can use the value of each element to index directly into array (subtracting 1 to keep in range)
+def find_duplicates(nums):
+    result = []
+
+    # Iterate over each number in the array
+    for i in range(len(nums)):
+        # Get the index corresponding to the current number
+        index = abs(nums[i]) - 1
+
+        # If the number at nums[index] is already negative, we found a duplicate
+        if nums[index] < 0:
+            result.append(abs(nums[i]))
+        else:
+            # Mark the number as seen by making the value at the corresponding index negative
+            nums[index] = -nums[index]
+
+    return result
