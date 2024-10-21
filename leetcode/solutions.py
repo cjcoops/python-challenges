@@ -1,4 +1,4 @@
-from collections import Counter
+from collections import Counter, defaultdict
 
 # Simple solution:
 # sorting is O(n log n) for each string
@@ -59,3 +59,14 @@ def length_of_longest_substring(s):
 def find_the_difference(a, b):
     difference = Counter(b) - Counter(a)
     return next(iter(difference))
+
+
+def group_anagrams(anagrams):
+    groups = defaultdict(list)
+
+    for string in anagrams:
+        sorted_string = "".join(sorted(string))
+
+        groups[sorted_string].append(string)
+
+    return list(groups.values())
